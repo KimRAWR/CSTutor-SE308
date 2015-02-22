@@ -9,7 +9,9 @@ import java.util.Collection;
  * the quiz
  */
 abstract class studentQuiz {
+    //consist of a set of pages of questions
     Collection<Page> quizquestions;
+    //checks to see whether the quiz has been submited
     boolean isSubmited;
 }
 /**
@@ -18,8 +20,11 @@ abstract class studentQuiz {
  * page has a submit button for people to turn in their quiz.
  */
 abstract class Page{
+   //consists of a set of questions
    Collection<Questions> question;
+   //shows how many questions there are
    int amtQuestions;
+   //a value that indicates whether the page has a submit button or not
    boolean hasSubmit;
      
 }
@@ -29,9 +34,12 @@ abstract class Page{
  * a choice for the question.
  */
 abstract class Questions{
+   // Indicate what number the question is
    int questionNum;
+   // Gives a description of what the questions request for
    Description question;
-   char answer;
+   // multiple choices for the question
+   char answer[4];
 }
 /**
  * The description is meant for student to see what each question is about.
@@ -46,10 +54,12 @@ abstract class Description
  * size.
  */
 abstract class EditQuestion{
+   //The font for the question
    String fontStyle;
+   //The font size for the question
    int fontSize;
+   //What kind of question to be edited
    String question;
- 
 }
 /**
  * This advicepage allows teachers to give feedback on tutorial pages to review
@@ -57,6 +67,8 @@ abstract class EditQuestion{
  */
 abstract class AdvicePage
 {
+   //Advice to give
    String advice;
+   //Refers to the page student need to review on
    Page pageToReview;
 }

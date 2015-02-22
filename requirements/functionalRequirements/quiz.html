@@ -1,20 +1,34 @@
 <html>
 <head>
-   <title>CS Tutor quizzes</title>
-   <style>
-   </style>
+   <title>2.4 Quizzes</title>
 </head>
+   <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   <link rel = "stylesheet" href="../style.css">
 
-<body>
-   <h1><center>Quiz</center></h1>
-   <p class = "quizT"> The CS Tutor is a tool that is made to help students understand topics better for their respective classes. This section particularly consists of sample quiz taken by the student and a sample quiz the professor can design.</p>
-   <p> An example of a CS Tutor quiz will look like this:</p>
+<body class = "container">
+   <h3>2.4 Quizzes</h3>
+   <p> Before a student takes a quiz, the student usually finishes a small mini tutorial. The quiz can appear anywhere in the tutorial, and the instructor can put as many quizzes as he/she wishes. Once the student finished reading the mini-tutorial, the student can click "start the quiz" to start taking the quiz:
+   <p><img src = "BeginningQuiz.jpg"></p>
+   <p> This is an example of the last page of the tutorial. Once the student finishing reading, the student can choose to take a quiz or go back to review the tutorial.</p>
+   <p> The button "start the quiz" will take the student to a quiz page similar to the image below, where the students will answer questions in the form of multiple choice, short answer, or fill in sample code.</p>
+   <p> The button "first page" will take the student back to the first page of the tutorial related to the quiz. This way the student can go over any material that they do not understand.</p>  
+   <p> In case if the student only wants to review the previous page, the student can click the button "back" to go back to the previous page.</p>
+   <p>Once the student starts the quiz, an example of such quiz will look like this:</p>
    <p><img src = "Quiz1.jpg"> </p>
-   <p> For this quiz, the student fills in the answer. The student can then click onto the next page and continues to finish the quiz.</p>
+   <p> For this quiz, the student fills in the answer. The student can then click onto the next page and continue to finish the quiz. </p>
    <p> Now, let's say if the student want to submit the quiz, it will look something like this: </p>
    <p><img src = "Submit.jpg"> </p>
-   <p> For the teacher, the quiz will look a bit different because the teacher will be responsible for editing the quiz. A sample of a quiz edited by the instructor will look like this: </p>
-   <p><img src = "quiz2.jpg"> </p> 
-   <p> Let's say if the instructor wants to edit a quiz from another class, he/she can selector other class sections on the menu box right of the questions. Otherwise, once the quiz is done editing, the instructor can save it.</p>
+   <p> Once the student click submit, the dialog will show up and prompt the user again for yes if he has completed the quiz. This is done so that students won't accidentally click submit and regret any question they have or have not answered.</p>
+   <p>After you hit the button "submit", the result is going to get computed:</p>
+   <p><img src = "Result.jpg"> </p>
+   <p> Here, you can press button "other tutorials" to go to other tutorials, or "next" to move on to the next mini tutorial, "previous tutorial page" to the page of the last mini tutorial before the quiz, or "review quiz" to look at what problems were wrong. Again, the amount of these quizzes created are controlled by the instructor.
+
+   <p> If the student did well, the quiz will simply tell the student to move on. Otherwise, as indicated in the picture, if the student got some score between 60-80, the student will go to "page 8"(in reality, the instructor can customize the quiz result to tell the student which page to go to) and review from there. If the student scored below a 60, the student would simply have to go back to the beginning of the mini tutorial and review it again.</p>
+   <div id="navButtons" align="center">
+      <a href="tutorial.html" type="button" class="btn btn-default fistBtn"><b>Previous</b>: Tutorials</a>
+      <a href= "../functional.html" class="btn btn-default"><b>Up</b>: Functional Requirements</a>
+      <a href= "../../index.html" class="btn btn-default"<b>Top</b>: Index</a>
+      <a href="chat.html" class="btn btn-default lastBtn"><b>Next</b>: Student Progress</a>
+   </div>
 </body>
 </html>  

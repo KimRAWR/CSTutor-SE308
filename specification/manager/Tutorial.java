@@ -1,18 +1,21 @@
-package manager;
+package Manager;
 import java.util.Collection;
 
 /**
- * Represents a tutorial. Each tutorial contains some pages
+ * Derived from section 2.2
+ *
+ * A tutorial is a collection of information pages and quizzes. Multiple
+ * pages make up a tutorial. A tutorial can be part of a larger unit.
  */
 public abstract class Tutorial {
    private Collection<Page> pages;
    /**
-    * Adds the page to the collection
+    * AddPage adds the given page to the collection
     */
    abstract void addPage(Page page);
 
    /**
-    * Removes the page from the collection
+    * RemovePage removes the page from the collection, if it exists.
     */
-   abstract void removeSection(Page page);
+   abstract void removePage(Page page);
 }

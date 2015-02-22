@@ -1,15 +1,16 @@
-package manager;
-import java.util.Collection;
+package Manager;
 
 /**
- * Each user has an access level associated with them.
+ * The user class is based on the requirement that classes need students.
+ * Each user has a name and access level associated with them.
  */
 public abstract class User {
    String name;
    AccessLevel access;
 
    /**
-    * Access level represents the level of access the user has.
+    * Each level corresponds to an access level. Guest is lowest, Professor
+    * is highest.
     */
    enum AccessLevel {
       Guest, Student, Assistant, Professor
